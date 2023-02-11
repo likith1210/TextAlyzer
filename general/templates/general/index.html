@@ -1,0 +1,65 @@
+{% extends "general/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="frm">
+    <div class="txt">
+        <p class="quote"><span class="key">Data Mining</span> is description of a piece which merely focuses on the text alone.</p>
+    </div>
+    <div class="img">
+        <img src="{% static 'general/images/2.png' %}" class="image">
+    </div>
+</div>
+
+<!-------------- Frame 2--------------->
+<div class="frm sec2">
+    <div class="info bc1">
+       <h1>Summarizing Text</h1> 
+       <p>Text summarization refers to the technique of shortening long pieces of text. The intention is to create a coherent and fluent summary having only the main points outlined in the document.</p>
+       <a class="link" href="https://en.wikipedia.org/wiki/Automatic_summarization" target="_blank"><div class="know bc2">Know More</div></a>
+    </div>
+    <div class="info bc1">
+        <h1>Question Answering</h1>
+        <p>Question answering (QA) is a fields of natural language processing (NLP), which is concerned with building systems that automatically answer questions posed by humans in a natural language.</p>
+        <a class="link" href="https://en.wikipedia.org/wiki/Question_answering" target="_blank"><div class="know bc2">Know More</div></a>
+    </div>
+</div>
+
+<!--------------- Frame 3 ----------------->
+<div class="frm">
+    <div class="box">
+        <p>
+            <span class="fir">Higher</span><br>
+            <span class="sec">Accuracy</span>
+        </p>
+        <h1 class="arrow">⇀</h1>
+    </div>
+    <div class="box">
+        <p>
+            <span class="fir">Greater</span><br>
+            <span class="sec">Efficiency</span>
+        </p>
+        <h1 class="arrow">⇀</h1>
+    </div>
+    <div class="box">
+        <p>
+            <span class="fir">Faster</span><br>
+            <span class="sec">Analysis</span>
+        </p>
+        <h1 class="arrow">⇀</h1>
+    </div>
+
+    <!------------ Hidden frame ------------->
+    <div class="layout">
+        <div class="name">
+        </div>
+        <div class="content">
+            <div class="tp">
+                <div class="close">x</div>
+            </div>
+            <div class="btm">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+     

@@ -1,0 +1,35 @@
+{% extends "general/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="frm">
+    <div class="sum">
+        <div class="sum_txt"><textarea id="sum_read" class="sum_txtbox" placeholder="Insert the text here..."></textarea></div>
+        <div class="sum_opt">
+            <input type="file" class="file">
+            <select name="len" id="len">
+                <option value="" selected="selected" disabled>Summary Length</option>
+                <option value="short">Short</option>
+                <option value="brief">Brief</option>
+                <option value="long">Long</option>
+            </select>
+        </div>
+    </div>
+    <div class="sum">
+        <div class="sum_txt"><textarea id="sum_res" class="sum_txtbox" readonly></textarea></div>
+        <div class="sum_opt">
+            <div class="count">Words: 0</div>
+            <button class="copy">Copy</button>
+        </div>
+    </div>
+    <div class="sum_btn">Summarize</div>
+</div>
+<div class="frm">
+    <div class="guide">
+        <h1>How to use our text summarizer?</h1>
+        <p>* Insert the text (article, research paper, book extract) into the text area.</p>
+        <p>* Or upload your content.</p>
+        <p>* Click the “Summarize” Button. </p>
+        <p>* You can also toggle other features by selecting show bullets, best line, ranked base, and summary length.</p>
+    </div>
+</div>
+{% endblock %}

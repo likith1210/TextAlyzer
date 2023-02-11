@@ -1,0 +1,32 @@
+{% extends "general/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="frm">
+    <div class="sum">
+        <div class="sum_txt"><textarea class="sum_txtbox" placeholder="Insert the text here..."></textarea></div>
+        <div class="sum_opt">
+            <input type="file" class="file">
+            <select name="lang" id="lang">
+                <option value="Eng">English</option>
+                <option value="kan">Kannada</option>
+                <option value="hin">Hindi</option>
+                <option value="fre">French</option>
+                <option value="spa">Spanish</option>
+            </select>
+        </div>
+    </div>
+        <div class="ques"><textarea class="ques_txt" placeholder="Enter the question here..."></textarea></div>
+        <div class="ques"><textarea class="ques_txt" readonly></textarea></div>
+    <div class="sum_btn">Find Answer</div>
+</div>
+<div class="frm">
+    <div class="guide" id="ques_guide">
+        <h1>How to use our question answering system?</h1>
+        <p>* Insert the text (article, research paper, book extract) into the text area.</p>
+        <p>* Or upload your content.</p>
+        <p>* Enter the question to which the answer is to be found.</p>
+        <p>* Click the “Summarize” Button. </p>
+        <p>* You can also toggle other features by selecting show bullets, best line, ranked base, and summary length.</p>
+    </div>
+</div>
+{% endblock %}
